@@ -1,0 +1,14 @@
+{
+    "name": "bluey/bluey-wc-shop-theme",
+    "description": "Theme for Bluey Woocommerce theme",
+    "type": "project",
+    "authors": [
+        {
+            "name": "okkyAdiansyah",
+            "email": "okkyadiansyah.0610@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {"Bluey\\" : "./src/include"}
+}
