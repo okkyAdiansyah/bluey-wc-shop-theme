@@ -11,8 +11,8 @@ if( ! defined( 'ABSPATH' ) ){
 }
 
 // include autoload
-if( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ){
-    require_once dirname( __FILE__ ) . '/vendor/autoload.php';
+if( file_exists( __DIR__ . '/vendor/autoload.php' ) ){
+    require_once __DIR__ . '/vendor/autoload.php';
 }
 
 $theme = wp_get_theme( 'bluey-shop-wc' );
@@ -20,3 +20,7 @@ $theme = wp_get_theme( 'bluey-shop-wc' );
 // Global constant
 define( 'THEME_VERSION', $theme['Version'] );
 define( 'THEME_TEXT_DOMAIN', $theme['Text Domain'] );
+
+use Bluey\ThemeInit;
+
+$theme_init = ThemeInit::get_instance();
