@@ -10,5 +10,7 @@
     ],
     "minimum-stability": "dev",
     "require": {},
-    "autoload": {"Bluey\\" : "./src/include"}
+    "autoload": {
+        "psr-4": {"Bluey\\" : "./src/include"}
+    }
 }
