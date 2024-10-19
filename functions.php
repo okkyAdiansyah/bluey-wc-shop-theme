@@ -22,5 +22,7 @@ define( 'THEME_VERSION', $theme['Version'] );
 define( 'THEME_TEXT_DOMAIN', $theme['Text Domain'] );
 
 use Bluey\ThemeInit;
+use Bluey\BlockStyles\BlockInit;
 
 $theme_init = ThemeInit::get_instance();
+$block_init = new BlockInit();

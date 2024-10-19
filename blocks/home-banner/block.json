@@ -1,0 +1,22 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "bluey-shop/home-banner",
+    "title": "Home Banner",
+    "category": "bluey-shop",
+    "icon": "smiley",
+    "description": "A custom Gutenberg block.",
+    "attributes": {
+        "content": {
+            "type": "string",
+            "source": "html",
+            "selector": "p"
+        }
+    },
+    "supports": {
+        "html": false
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./editor.css",
+    "style": "file:./style.css"
+}

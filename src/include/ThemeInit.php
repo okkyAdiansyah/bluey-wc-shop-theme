@@ -33,7 +33,7 @@ class ThemeInit {
 		'f.a.q'
 	);
     protected $unregistered_services = array(
-		'blocks' => BlockInit::class
+
 	);
 
     private function __construct(){
@@ -66,7 +66,7 @@ class ThemeInit {
 		/**
 		 * Only call action hook under this comment
 		 */
-		add_action( 'init', array( $this, 'bs_set_static_front_page' ), 20 );
+		add_action( 'init', array( $this, 'bs_set_static_front_page' ) );
         add_action( 'after_setup_theme', array( $this, 'bs_theme_setup' ), 10 );
 		add_action( 'after_switch_theme', array( $this, 'bs_init_template_page_registration' ), 10 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'bs_enqueue_main_theme_scripts' ), 10 );
@@ -79,7 +79,7 @@ class ThemeInit {
 		/**
 		 *
 		 */
-		$this->bs_register_services();
+
     }
 
     /**
